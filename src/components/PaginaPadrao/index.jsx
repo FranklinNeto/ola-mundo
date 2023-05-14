@@ -7,6 +7,7 @@ function PaginaPadrao() {
       <Banner />
       <Outlet />
     </main>
+    /* https://reactrouter.com/en/main/start/overview#nested-routes */
   );
 }
 

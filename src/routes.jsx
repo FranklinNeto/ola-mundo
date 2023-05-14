@@ -9,11 +9,11 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Menu />
-
       <Routes>
         <Route path="/" element={<PaginaPadrao />}>
-          <Route path="/" element={<Initial />} />
-          <Route path="/aboutme" element={<AboutMe />} />
+          <Route index element={<Initial />} />
+          {/* index ==> possui a mesma rota do Route pai */}
+          <Route path="aboutme" element={<AboutMe />} />
         </Route>
         <Route path="*" element={<h2>Página não encontrada...</h2>} />{" "}
         {/* se não achar nenhuma das rotas acimas, o * é acionado. */}
