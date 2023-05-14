@@ -1,5 +1,12 @@
+import Banner from "components/Banner";
+
 function Initial() {
-  return <h1>Olá, mundo</h1>;
+  return (
+    <main>
+      <Banner />
+      <h1>Olá, mundo</h1>
+    </main>
+  );
 }
 
 export default Initial;
