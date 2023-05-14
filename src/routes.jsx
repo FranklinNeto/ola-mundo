@@ -5,6 +5,7 @@ import Post from "pages/Post";
 import Menu from "components/Menu";
 import Footer from "components/Footer";
 import PaginaPadrao from "components/PaginaPadrao";
+import NotFound from "pages/NotFound";
 
 function AppRoutes() {
   return (
@@ -15,9 +16,9 @@ function AppRoutes() {
           <Route index element={<Initial />} />
           {/* index ==> possui a mesma rota do Route pai */}
           <Route path="aboutme" element={<AboutMe />} />
-          <Route path="posts/:id" element={<Post />} />
         </Route>
-        <Route path="*" element={<h2>Página não encontrada...</h2>} />{" "}
+        <Route path="posts/:id" element={<Post />} />
+        <Route path="*" element={<NotFound />} />
         {/* se não achar nenhuma das rotas acimas, o * é acionado. */}
       </Routes>
       <Footer />

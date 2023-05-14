@@ -1,5 +1,5 @@
 import styles from "./Initial.module.css";
-import posts from "assets/json/posts.json";
+import posts from "json/posts.json";
 import PostCard from "components/PostCard";
 
 function Initial() {
