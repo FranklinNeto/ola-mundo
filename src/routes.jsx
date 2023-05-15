@@ -6,10 +6,12 @@ import Menu from "components/Menu";
 import Footer from "components/Footer";
 import PaginaPadrao from "components/PaginaPadrao";
 import NotFound from "pages/NotFound";
+import ScrollToTop from "components/ScrollToTop";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Menu />
       <Routes>
         <Route path="/" element={<PaginaPadrao />}>
