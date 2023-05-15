@@ -44,10 +44,10 @@ function Post() {
       <div
         className="botao__container"
         onClick={() => {
-          navegar(-1);
+          navegar("/");
         }}
       >
-        <Button large>Voltar</Button>
+        <Button large>Voltar para o Início</Button>
       </div>
     </PostModel>
   );
