@@ -7,6 +7,7 @@ import Button from "components/Button";
 import PostCard from "components/PostCard";
 import "./Post.css";
 import styles from "./Post.module.css";
+import Animation from "components/Animation";
 
 function Post() {
   const navegar = useNavigate();
@@ -24,32 +25,34 @@ function Post() {
     .slice(0, 4);
 
   return (
-    <PostModel fotoCapa={`/posts/${post.id}/capa.png`} titulo={post.titulo}>
-      <div className="post-markdown-container ">
-        <ReactMarkdown>{post.texto}</ReactMarkdown>
-      </div>
-      <div>
-        <h2 className={styles.tituloOutrosPosts}>
-          Outros posts que você pode gostar:
-        </h2>
-        <ul className={styles.postsRecomendados}>
-          {postRecomendados.map((post) => (
-            <li key={post.id}>
-              <PostCard post={post} />
-            </li>
-          ))}
-        </ul>
-      </div>
+    <Animation>
+      <PostModel fotoCapa={`/posts/${post.id}/capa.png`} titulo={post.titulo}>
+        <div className="post-markdown-container ">
+          <ReactMarkdown>{post.texto}</ReactMarkdown>
+        </div>
+        <div>
+          <h2 className={styles.tituloOutrosPosts}>
+            Outros posts que você pode gostar:
+          </h2>
+          <ul className={styles.postsRecomendados}>
+            {postRecomendados.map((post) => (
+              <li key={post.id}>
+                <PostCard post={post} />
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      <div
-        className="botao__container"
-        onClick={() => {
-          navegar("/");
-        }}
-      >
-        <Button large>Voltar para o Início</Button>
-      </div>
-    </PostModel>
+        <div
+          className="botao__container"
+          onClick={() => {
+            navegar("/");
+          }}
+        >
+          <Button large>Voltar para o Início</Button>
+        </div>
+      </PostModel>
+    </Animation>
   );
 }
 

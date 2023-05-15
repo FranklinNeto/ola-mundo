@@ -2,12 +2,13 @@ import Button from "components/Button";
 import styles from "./NotFound.module.css";
 import erro404 from "assets/erro_404.png";
 import { useNavigate } from "react-router-dom";
+import Animation from "components/Animation";
 
 function NotFound() {
   const navegar = useNavigate();
 
   return (
-    <>
+    <Animation>
       <div className={styles.conteudoContainer}>
         <span className={styles.texto404}>404</span>
         <h1 className={styles.titulo}>Ops! Página não encontrada.</h1>
@@ -34,7 +35,7 @@ function NotFound() {
         />
       </div>
       <div className={styles.espacoEmBranco}></div>
-    </>
+    </Animation>
   );
 }
 export default NotFound;
