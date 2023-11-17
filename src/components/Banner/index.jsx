@@ -1,6 +1,6 @@
 import styles from "./Banner.module.css";
 import circuloColorido from "assets/circulo_colorido.png";
-import minhaFoto from "assets/minha_foto.png";
+import minhaFoto from "assets/minha_foto.jpg";
 import Animation from "components/Animation";
 function Banner() {
   return (
@@ -9,8 +9,8 @@ function Banner() {
         <div className={styles.apresentacao}>
           <h1 className={styles.titulo}>Olá, mundo!</h1>
           <p className={styles.paragrafo}>
-            Boas vindas ao meu espaço pessoal! Eu sou Antônio Evaldo, instrutor
-            de Front-end da Alura. Aqui compartilho vários conhecimentos, espero
+            Boas vindas ao meu espaço pessoal! Eu sou Franklin Neto, estudante
+            de Desenvolvimento Web Full Stack. Aqui compartilho vários conhecimentos, espero
             que aprenda algo novo :)
           </p>
         </div>

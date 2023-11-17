@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className={styles.rodape}>
       <MarcaRegistrada />
-      Desenvolvido por Alura
+      Desenvolvido por Franklin Neto
     </footer>
   );
 }

@@ -1,6 +1,6 @@
 import PostModel from "components/PostModel";
 import fotoCapa from "assets/sobre_mim_capa.png";
-import fotoSobreMim from "assets/sobre_mim_foto.png";
+import fotoSobreMim from "assets/sobre_mim_foto.jpg";
 import styles from "./AboutMe.module.css";
 import Animation from "components/Animation";
 
@@ -8,7 +8,7 @@ function AboutMe() {
   return (
     <Animation>
       <PostModel fotoCapa={fotoCapa} titulo={"Sobre mim"}>
-        <h3 className={styles.subtitulo}>Olá, eu sou o Antônio!</h3>
+        <h3 className={styles.subtitulo}>Olá, eu sou o Franklin!</h3>
         <img
           className={styles.fotoSobreMim}
           src={fotoSobreMim}
@@ -16,41 +16,43 @@ function AboutMe() {
         />
 
         <p className={styles.paragrafo}>
-          Oi, tudo bem? Eu sou instrutor de Front-end na Alura e estou feliz de
-          te ver por aqui.
+          Oi, tudo bem? Eu sou estudante de Desenvolvimento Web Full Stack e
+          estou feliz de te ver por aqui.
         </p>
         <p className={styles.paragrafo}>
-          Minha história com programação começou no Instituto Federal do Piauí
-          (IFPI), quando fiz o ensino médio integrado ao curso de Informática.
-          Eu aprendi lógica de programação e o básico de várias linguagens, como
-          PHP, Python, Java, mas sem aprofundar muito em cada uma delas. Eu
-          gostava muito de estudar programação, mas na época não fazia ideia de
-          que trabalharia com isso hoje.
+          Atualmente estou me graduando em Análise e Desenvolvimento de Sistemas
+          pela Faculdade Martha Falcão e possuo formação incompleta em
+          Biotecnologia na Universidade Federal do Amazonas.
         </p>
         <p className={styles.paragrafo}>
-          No ensino superior, escolhi cursar Engenharia Elétrica na Universidade
-          Federal do Piauí (UFPI). Lá eu consegui entrar no PET (Programa de
-          Educação Tutorial), um grupo acadêmico que contribui de diversas
-          formas para o curso. Lá eu tive a oportunidade de estudar
-          desenvolvimento web para ser um dos mantenedores do site deles.
+          Iniciei o ensino superior cursando, por um período, Medicina na
+          Universidade do Estado do Amazonas onde descobri minha paixão por
+          biotecnologia, que por sua vez, me mostrou que programar seres vivos e
+          computadores podem ter conceitos muito parecidos.
         </p>
         <p className={styles.paragrafo}>
-          Com isso tive minha experiência de dev mais próxima da realidade, com
-          prazos de implementação para o site, e aprendi muito enquanto
-          codificava.
+          Durante minha formação, tive a oportunidade de participar de
+          diferentes atividades extracurriculares sobre Biotecnologia, com
+          destaque para participações em eventos nacionais e internacionais como
+          o IGEM (International Genetically Engineered Machine). Essas
+          experiências me permitiram desenvolver uma visão ampla e integrada de
+          como a tecnologia, como a programação, pode ser aplicada na ciência.
         </p>
         <p className={styles.paragrafo}>
-          E foi enquanto eu estava no PET que decidi procurar um estágio em
-          desenvolvimento web. Eu encontrei uma vaga na Alura para o Scuba Team
-          e percebi que ela aliava duas paixões minhas: programação e educação.
-          Para minha felicidade, fui escolhido para fazer parte do time.
+          Com uma curiosidade inquieta e sempre disposto a aprender novas
+          ferramentas e tecnologias, encontrei na Programação um novo caminho
+          para expandir meus conhecimentos e contribuir para a realização de
+          novos projetos. Em 2022, iniciei minha jornada como desenvolvedor na
+          Kenzie Academy, além de complementar meus estudos com outros cursos
+          disponíveis na plataforma Alura, como forma de estar sempre atualizado
+          e aprimorar minhas habilidades.
         </p>
         <p className={styles.paragrafo}>
-          Desde então, tem sido aprenas aprendizados atrás de aprendizados. A
-          Alura é uma escola não só para seus alunos e alunas, mas também para
-          os colaboradores e colaboradoras. Hoje sou muito feliz de ter a
-          oportunidade de trazer esses conteúdos ricos e encantadores para você.
-          Espero que aprenda bastante!
+          Nessa trajetória, adquiri experiência em diversas tecnologias, como
+          HTML5, CSS3, JavaScript, Typescript, ReactJS, NodeJS, Express e
+          Python, já tendo feito alguns pequenos projetos de Front-End e
+          Back-End. Enfim, esta é um pouco da minha história. Com este meu
+          projeto, espero que aprenda bastante sobre alguns dos meus interesses!
         </p>
       </PostModel>
     </Animation>
